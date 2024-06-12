@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoD12M06.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Image
+                x:Name="MoedaImage"
+                HeightRequest="50"/>
+            <Label
+                x:Name="ResultadoLabel"></Label>
+
+            <Picker x:Name="SelecaoPicker">
+                <Picker.Items>
+                    <x:String>cara</x:String>
+                    <x:String>coroa</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button
+                x:Name="SortearButton"
+                Text="Girar a Moeda"
+                Clicked="GirarButton_Clicket"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
